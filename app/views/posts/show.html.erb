@@ -1,0 +1,23 @@
+<% set_title @post[:page_title] %>
+
+<main>
+  <article class="article">
+    <header class="article__header">
+      <h1 class="article__title"><%= @post[:post_header] %></h1>
+      <div class="article__publishDate"><%= @post[:post_publish_date] %></div>
+    </header>
+    <section>
+      <div class="article__content">
+
+        <%= @post[:post_content].html_safe %>
+
+        </div>
+
+              <%= render "article_extra_nav" %>
+
+      </section>
+    </article>
+
+      <%= render partial: "sec_section", locals: { post: @post } %>
+
+</main>

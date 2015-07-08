@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  root 'home#index'
+
+  get '/about', controller: 'home', action: 'about'
+
+  get '/posts/:slug', controller: 'posts', action: 'show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

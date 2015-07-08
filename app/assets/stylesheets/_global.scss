@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 0.06rem;
+}
+body {
+  margin: 0;
+}
+.glob__fadeTint {
+  position: relative;
+  height: 300px;
+  @media all and (max-width: $s-min) {
+    height: 350px;
+  }
+  &:before {
+    content: "";
+    transition: all .3s linear;
+  @include tintOverlay(100%, 100%);
+  }
+  &:hover:before {
+    background: none;
+  }
+  > img {
+    width: 100%;
+    height: 300px;
+    @media all and (max-width: $s-min) {
+      height: 350px;
+    }
+    &:after {
+      @include tintOverlay(100%, 100%);
+    }
+  }
+  > h2 {
+    position: absolute;
+    max-width: 75%;
+    text-align: left;
+    bottom: 0px;
+    padding: 0px 20px 0px 20px;
+    color: #fff;
+    font-size: 38px;
+    text-shadow: 2px 2px #083451;
+  }
+}
+.glob__mainContent {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,120 @@
+.sec {
+  position: relative;
+  padding: 0px 10% 0px 10%;
+  margin-bottom: 20px;
+  @media all and (min-width: $m-min) {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    margin: 40px 10% 0 0;
+    padding: 0;
+  }
+  @media all and (min-width: $l-min) {
+    margin-right: 15%;
+    width: 20%;
+  }
+}
+.sec__author {
+  margin: 0px 0px 20px 0px;
+  height: 205px;
+}
+.sec__authorPic {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+@include transform(-50%);
+}
+.sec__imgOverlay {
+  top: 15px;
+  left: 50%;
+  border-radius: 50px;
+@include transform(-50%);
+@include tintOverlay(100px, 100px);
+}
+.sec__authorName {
+  position: absolute;
+  left: 50%;
+  top: 130px;
+  width: 280px;
+  text-align: center;
+  font-size: 24px;
+  color: $accentColor2;
+@include transform(-50%);
+}
+.sec__authorSocialMedia {
+  position: absolute;
+  left: 50%;
+  top: 165px;
+  width: 280px;
+  @include transform(-50%);
+  > ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    > li {
+      display: inline-block;
+      margin: 0px 10px 0px 10px;
+      > a {
+        text-decoration: none;
+        font-size: 20px;
+        color: $subTextColor;
+      }
+    }
+  }
+}
+.sec__advert {
+  text-align: right;
+  > ul {
+    margin: 0;
+    padding: 0;
+    @media all and (min-width: $s-min) {
+    }
+    > li {
+      display: inline-block;
+      width: 100%;
+      margin: 10px 0px 10px 0px;
+      @media all and (min-width: $es-min) {
+        height: 350px;
+        padding: 0 10% 0 10%;
+      }
+      @media all and (min-width: $s-min) {
+        padding: 0 20% 0 20%;
+      }
+      @media all and (min-width: $m-min) {
+        padding: 0 10% 0 10%;
+      }
+    }
+  }
+}
+.sec__aboutAd {
+  font-size: 18px;
+  color: $subTextColor;
+  @media all and (min-width: $s-min) {
+  }
+}
+.sec__section {
+  display: none;
+  @media all and (min-width: $m-min) {
+    display: block;
+    padding: 0 10% 0 10%;
+    max-width: 100%;
+    > h2 {
+      color: $accentColor1;
+      font-size: 24px;
+    }
+    > .sec__sectionContent {
+      color: $subTextColor;
+    }
+  }
+}
+.sec__bottomImg {
+  margin: 15px 10%;
+  max-width: 80%;
+  height: auto;
+  @media all and (min-width: $m-min) {
+    display: none;
+  }
+}

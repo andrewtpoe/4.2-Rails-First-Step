@@ -1,0 +1,12 @@
+@mixin transform($xVal, $yVal: null) {
+  -webkit-transform: translateX($xVal);
+  -webkit-transform: translateY($yVal);
+  transform: translateX($xVal);
+  transform: translateY($yVal);
+}
+@mixin tintOverlay($height, $width) {
+  position: absolute;
+  height: $height;
+  width: $width;
+  background-color: $blueTint;
+}

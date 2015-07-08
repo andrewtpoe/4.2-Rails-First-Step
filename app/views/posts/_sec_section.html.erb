@@ -1,0 +1,34 @@
+<div class="sec">
+  <div class="sec__author">
+    <%= image_tag(post[:author_img_path], class: 'sec__authorPic') %>
+    <div class="sec__imgOverlay"></div>
+    <div class="sec__authorName">
+      <%= post[:author_name].upcase %>
+    </div>
+    <div class="sec__authorSocialMedia">
+      <ul>
+        <li><a href=<%= post[:author_social][:facebook] %> >Twitter</a></li>
+        <li><a href=<%= post[:author_social][:twitter] %> >Facebook</a></li>
+        <li><a href=<%= post[:author_social][:instagram] %> >Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="sec__advert">
+    <ul>
+      <li>
+        <a href="#">
+          <div class="glob__fadeTint">
+            <%= image_tag('ads/kayakad.jpg') %>
+          </div>
+        </a>
+        <a class="sec__aboutAd" href="#">About This Ad</a>
+      </li>
+    </ul>
+  </div>
+  <div class="sec__section">
+    <h2>SIDEBAR SECTION HEADING</h2>
+    <div class="sec__sectionContent">
+      <p>Leberkas flank ground round porchetta, jerky boudin short ribs landjaeger capicola tenderloin prosciutto. Shank leberkas prosciutto biltong cow corned beef ham hock brisket pork belly ground round. Fatback porchetta swine prosciutto, short ribs cupim ribeye. Andouille tail spare ribs pastrami. Frankfurter short ribs pancetta andouille corned beef.</p>
+    </div>
+  </div>
+</div>
